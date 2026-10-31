@@ -20,3 +20,17 @@ export SLEEP_SCREEN_INTERVAL=3600
 
 export LOW_BATTERY_REPORTING=${LOW_BATTERY_REPORTING:-false}
 export LOW_BATTERY_THRESHOLD_PERCENT=10
+
+
+# Dashboard image URL.
+# Replace with your own PNG endpoint.
+export DASHBOARD_URL="${DASHBOARD_URL:-https://example.org/dashboard.png}"
+
+# Optional Home Assistant battery reporting.
+# Leave empty to disable reporting.
+#
+# Create a Home Assistant webhook automation first,
+# then configure your private URL on the Kindle.
+#
+# Never commit your actual webhook URL or token.
+export BATTERY_WEBHOOK_URL="${BATTERY_WEBHOOK_URL:-}"
