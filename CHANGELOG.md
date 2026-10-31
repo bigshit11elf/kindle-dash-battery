@@ -6,6 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Unreleased - Fork additions
+
+### Added
+- Optional Home Assistant battery reporting via HTTP webhook.
+- Configurable `DASHBOARD_URL`.
+- Configurable `BATTERY_WEBHOOK_URL`.
+- Battery reporting documentation and Home Assistant YAML example.
+- Battery reporting log messages.
+
+### Fixed
+- Prevent `xh` from reading stdin when launched through KUAL,
+  using `--ignore-stdin`.
+
+### Compatibility
+- Built on the original Kindle Dash project.
+- Designed for Kindle 4 Non-Touch.
+- Battery reporting is optional.
+- No additional runtime dependencies.
+
 ## [v1.0.0-beta.4] - 2022-07-27
 
 ### Changed
